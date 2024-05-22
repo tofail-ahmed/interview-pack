@@ -50,9 +50,9 @@ captain === "Mashrafi" &&
 
 // And instead of doing this
 if(captain !== "Mashrafi") {
-      // console.log("😡");
-  }
-  
+  console.log("😡");
+}
+
   // We can use ||
 //   captain === "Mashrafi" || console.log("😡");
 
