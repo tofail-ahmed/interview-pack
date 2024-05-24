@@ -30,15 +30,23 @@
 
 // let months = ["may", "june", "july", "april", "sept", "okt", "nov"];
 // let numbers = [1, 4, 56, 7, 4, 3, 2];
-// const sorterAsc = (arg) => {
+// const sorter = (arg, order = 'asc') => {
 //       if (typeof arg[0] === "number") {
-//         console.log(arg.sort((a, b) => a - b));
+//         if (order === 'asc') {
+//           console.log(arg.sort((a, b) => a - b));
+//         } else if (order === 'desc') {
+//           console.log(arg.sort((a, b) => b - a));
+//         }
 //       } else if (typeof arg[0] === "string") {
-//         console.log(arg.sort());
+//         if (order === 'asc') {
+//           console.log(arg.sort());
+//         } else if (order === 'desc') {
+//           console.log(arg.sort().reverse());
+//         }
 //       } else {
 //         console.log("Unsupported data type.");
 //       }
 //     };
     
-sorterAsc(numbers); //? [1,  2, 3, 4,4, 56, 7]
-// sorterAsc(months); //? [1,  2, 3, 4,4, 56, 7]
+// sorter(numbers,"desc"); //? 
+// sorter(months); //? 
