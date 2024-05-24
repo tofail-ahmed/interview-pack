@@ -9,8 +9,8 @@
 
 
 
-let array = [1, 2, 3, 4, 5];
-[array[0], array[4]] = [array[4], array[0]];
+// let array = [1, 2, 3, 4, 5];
+// [array[0], array[4]] = [array[4], array[0]];
 // console.log(array); //* [ 5, 2, 3, 4, 1 ]
 // let a=1;
 // let b=2;
@@ -88,10 +88,10 @@ const numbers = [1, 2, 3, 4, 5, 6,2,9,8];
 
 // 8. comma operator
 
-let x = 1;
-x = (x++, x);
+// let x = 1;
+// x = (x++, x);
 
-console.log(x);
+// console.log(x);
 
 let y = (2, 3);
 console.log(y);
@@ -104,3 +104,10 @@ for (let i = 0, j = 3; i <= 3; i++, j--) {
                                                           //* a[2][1] = 6
                                                           //* a[3][0] = 7
 }
+
+// const x = 5;
+// console.log(x === '5' ? 'Yes sir' : 'Nope');
+// const array = ['', 0, 1, [], false, , 'false'];
+// console.log(array.filter(elem => !!elem));
+
+
