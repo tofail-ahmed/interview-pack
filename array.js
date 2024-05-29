@@ -17,3 +17,6 @@ const numbers=[1,2,3]
 // console.log(numbers.at(1)) //* 2
 
 // console.log(numbers.indexOf(3)) //* 2
+
+// console.log(numbers.includes(1)) //* true
+// console.log(numbers.includes(4)) //* false
