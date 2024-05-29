@@ -10,3 +10,10 @@ const numbers=[1,2,3]
 
 // numbers.pop()
 // console.log(numbers) //* [ 1, 2 ]
+
+// numbers.shift()
+// console.log(numbers) //* [ 2, 3 ]
+
+// console.log(numbers.at(1)) //* 2
+
+// console.log(numbers.indexOf(3)) //* 2
