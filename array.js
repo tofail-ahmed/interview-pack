@@ -32,7 +32,12 @@ const numbers2=[1,2,3,4,5,6,7,8,9]
 // console.log(numbers2.every((number)=>(number>2))) //* false
 
 
-console.log(numbers2.some((number)=>(number>5))) //*true
-console.log(numbers2.some((number)=>(number<2))) //*true
-console.log(numbers2.some((number)=>(number>10))) //*false
-console.log(numbers2.some((number)=>(number<0))) //*false
+// console.log(numbers2.some((number)=>(number>5))) //*true
+// console.log(numbers2.some((number)=>(number<2))) //*true
+// console.log(numbers2.some((number)=>(number>10))) //*false
+// console.log(numbers2.some((number)=>(number<0))) //*false
+
+// console.log(numbers2.fill(5)) //* [5, 5, 5, 5, 5,5, 5, 5, 5]
+// console.log(numbers2.fill(10)) //* [10,10,10,10,10,10,10,10]
+// console.log(numbers2.fill(-10)) //* [-10,-10,-10,-10,-10,-10,-10,-10,-10]
+
