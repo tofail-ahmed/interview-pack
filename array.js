@@ -58,3 +58,14 @@ const numbers4=[1,2,3,4,5,[2,3,4,[2,5,6]]]
 // console.log(numbers3.toString()) //* 2,8,4,9,2,3,11,99,29
 
 // console.log(numbers3.slice(3,7)) //* [ 9, 2, 3, 11 ]
+// console.log(numbers3) //* [2,8,4,9,2,3,11,99,29]
+
+// console.log(numbers3.splice(3,7)) //*[ 9, 2, 3, 11, 99, 29 ]
+// console.log(numbers3) //* [ 2, 8, 4 ]
+
+// console.log(Array.isArray(numbers4[5][3])) //*true
+// console.log(numbers4.map((number)=>(typeof number== "number"))) //* [ true, true, true, true, true, false ]
+
+
+// console.log(Array.from("1234")) //* [ '1', '2', '3', '4' ]
+// console.log(Array.from("1234").map((number)=>(parseInt(number)))) //* [ 1, 2, 3, 4 ]
