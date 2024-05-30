@@ -69,3 +69,5 @@ const numbers4=[1,2,3,4,5,[2,3,4,[2,5,6]]]
 
 // console.log(Array.from("1234")) //* [ '1', '2', '3', '4' ]
 // console.log(Array.from("1234").map((number)=>(parseInt(number)))) //* [ 1, 2, 3, 4 ]
+
+
