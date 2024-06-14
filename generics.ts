@@ -1,33 +1,49 @@
-const person = { 
-	firstName: "John", 
-	lastName: "Doe", 
-	get fullName() { 
-		return `${this.firstName} ${this.lastName}`; 
-	}, 
-	set fullName(name) { 
-		const parts = name.split(" "); 
-		this.firstName = parts[0]; 
-		this.lastName = parts[1]; 
-	}, 
-}; 
-
-// console.log(person.fullName); // "John Doe" 
-
-// person.fullName = "Jane Smith"; 
-// console.log(person.firstName); // "Jane" 
-// console.log(person.lastName); // "Smith"
-
-const temperature = { 
-	_celsius: 0, 
-	get fahrenheit() { 
-		return this._celsius * 1.8 + 32; 
-	}, 
-	set fahrenheit(value) { 
-		this._celsius = (value - 32) / 1.8; 
-	}, 
-}; 
-
-console.log(temperature.fahrenheit); // 32 
-temperature.fahrenheit = 78; 
-console.log(temperature._celsius); // 20
-
+//  function printData(data: number) {
+      //       console.log("data: ", data);
+      //   }
+        
+        
+      //   printData(2);
+      
+      
+      
+      // function printData(data: number | string | boolean) {
+      //       console.log("data: ", data);
+      //   }
+        
+        
+      //   printData(2);
+      //   printData("hello");
+      //   printData(true);
+      
+      
+      
+      // function printData<T>(data: T) {
+      //       console.log("data: ", data);
+      //   }
+        
+        
+      //   printData(2);
+      //   printData("hello");
+      //   printData(true);
+      
+      // function printData<T>(data: T) {
+      //       console.log("data: ", data);
+      //   }
+        
+        
+      //   printData(2);
+      //   printData("hello");
+      //   printData(true);
+      //   printData([1, 2, 3, 4, 5, 6]);
+      //   printData([1, 2, 3, "hi"]);
+      //   printData({ name: "Ram", rollNo: 1 });
+      
+      
+      // function printData<X,Y>(data1: X, data2: Y) {
+      //       console.log("Output is: ", data1, data2);
+      //   }
+        
+        
+      //   printData("Hello", "World");
+      //   printData(123, ["Hi", 123]);
