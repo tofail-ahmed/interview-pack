@@ -77,6 +77,4 @@ class Device {
   const smartphone = new Smartphone();
   smartphone.info("IPhone","15Pro Max","1200USD","6700");
   // Outputs:
-  // This is a device
-  // This is a smartphone
-  
+  //This is IPhone 15Pro Max, This is $1200USD and battery is 6700maH
