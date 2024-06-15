@@ -130,6 +130,55 @@ const bankAccount = {
 //   bankAccount.withdraw = 600; // Insufficient funds!
 //   console.log(`Balance after failed withdrawal: ${bankAccount.balance}`); // Balance after failed withdrawal: 400
   
+const car = {
+      _speed: 0,
+      _maxSpeed: 150,
+  
+      // Getter for speed
+      get speed() {
+          return this._speed;
+      },
+  
+      // Setter for speed
+      set speed(value) {
+          if (value >= 0 && value <= this._maxSpeed) {
+              this._speed = value;
+          } else if (value > this._maxSpeed) {
+              console.error(`Speed cannot exceed ${this._maxSpeed} km/h!`);
+          } else {
+              console.error("Speed cannot be negative!");
+          }
+      },
+  
+      // Getter for maxSpeed
+      get maxSpeed() {
+          return this._maxSpeed;
+      },
+  
+      // Setter for maxSpeed
+      set maxSpeed(value) {
+          if (value > 0) {
+              this._maxSpeed = value;
+          } else {
+              console.error("Maximum speed must be positive!");
+          }
+      }
+  };
+  
+  console.log(`Initial Speed: ${car.speed} km/h`); // Initial Speed: 0 km/h
+  
+  car.speed = 120;
+  console.log(`Speed after setting: ${car.speed} km/h`); // Speed after setting: 120 km/h
+  
+  car.speed = 160; // Speed cannot exceed 150 km/h!
+  console.log(`Speed after invalid setting: ${car.speed} km/h`); // Speed after invalid setting: 120 km/h
+  
+  car.speed = -10; // Speed cannot be negative!
+  console.log(`Speed after invalid setting: ${car.speed} km/h`); // Speed after invalid setting: 120 km/h
+  
+  car.maxSpeed = 180;
+  car.speed = 160;
+  console.log(`Speed after updating maxSpeed and setting: ${car.speed} km/h`); // Speed after updating maxSpeed and setting: 160 km/h
   
 
 
