@@ -7,7 +7,7 @@ interface IMyUnion=number|string; //! ❌
 
 
 type MyFunctionType = (arg1: number, arg2: string) => boolean; //* ✔
-interface MyFunctionInterface {
+interface MyFunctionInterface { 
       (arg1: number, arg2: string): boolean;
     } //* ✔
 
